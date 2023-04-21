@@ -1,0 +1,95 @@
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+#side_nav{
+    height:100vh;
+    min-width: 250px;
+    max-width:250px;
+    transition: all 0.3s;
+    margin-top: 80px;
+    top: 0;
+    left: 0;
+}
+.head i{
+    font-size:20px;
+    font-weight: 400;
+    
+}
+.sidebar li a{
+    color: #000;
+    font-size:large;
+}
+.sidebar li.active{
+    background-color: white;
+}
+.sidebar li.active{
+    background-color: white;
+}
+.sidebar li.active a,.sidebar li.active a:hover{
+    color: #000;
+}
+.collapse form{
+    position: absolute;
+    left: 6pc;
+}
+nav ul li .nav-link{
+    color: #000;
+}
+.sidebar ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sidebar ul li span{
+    font-size: medium;
+}
+.gallery{
+    width:calc(100% - 250px);
+    position: relative;
+    top:8pc;
+    left: 8pc;
+}
+.gallery .col{
+    height:200px;
+}
+.gallery .post_img{
+    width: 100%;
+    height:100%;
+    border-radius:0px;
+}
+.gallery .model-img{
+    width: 100%;
+    height:100%;
+    border-radius:0px;
+}
+.content .navbar{
+        z-index: 1;
+}
+.bi-heart-fill{
+    color:rgb(224, 1, 161);
+}
+@media screen and (max-width:767px) {
+    #side_nav{
+        margin-left: -250px;
+        position: fixed;
+        margin-top:0px;
+        z-index:2;
+    }
+    #side_nav.active{
+        margin-left: 0;
+    }
+    .collapse form{
+        position: relative;
+        left: 0;
+    }
+    .gallery{
+        width: 100%;
+        position: relative;  
+        left: 0;
+    }
+    
+}
+.modal-footer img{
+    border-radius: 50%;
+}
